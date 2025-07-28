@@ -1,0 +1,180 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body, html {
+font-family: 'Segoe UI', sans-serif;
+scroll-behavior: smooth;
+background-color: rgb(207, 207, 205);
+color: #323030;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+
+
+header {
+background: #020504ae;
+color: white;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.logo {
+font-size: 28px;
+font-weight: bold;
+}
+
+.nav-links {
+display: flex;
+gap: 20px;
+list-style: none;
+}
+
+.nav-links a {
+color: rgb(245, 239, 239);
+text-decoration: none;
+font-weight: 500;
+}
+
+.menu-toggle {
+display: none;
+background: none;
+font-size: 28px;
+color: white;
+border: none;
+}
+
+
+.hero {
+display: flex;
+flex-wrap: wrap;
+padding: 60px 20px;
+background: #373b3b;
+color: white;
+}
+
+.hero-text {
+flex: 1;
+padding: 20px;
+}
+
+.hero-img img {
+width: 100%;
+max-width: 1500px;
+}
+
+.btn {
+background: #e91e63;
+color: white;
+padding: 12px 24px;
+display: inline-block;
+margin-top: 20px;
+text-decoration: none;
+}
+
+.section {
+padding: 60px 20px;
+text-align: center;
+}
+
+.program-cards,
+.trainer-cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+margin-top: 30px;
+}
+
+.card,
+.trainer {
+background: white;
+padding: 20px;
+border-radius: 10px;
+width: 280px;
+box-shadow: 0 20px 6px rgba(0,0,0,0.1);
+}
+
+.card img,
+.trainer img {
+width: 100%;
+height: 80%;
+border-radius: 10px;
+}
+
+
+.contact form {
+max-width: 600px;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 16px;
+}
+
+.contact button {
+background: #e91e63;
+color: white;
+padding: 12px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
+
+footer {
+background: #111;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+}
+.socials{
+    text-align: center;
+}
+.socials li{
+    display: inline;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+.nav-links {
+display: none;
+flex-direction: column;
+background: #111;
+position: absolute;
+top: 60px;
+right: 0;
+width: 200px;
+}
+
+.nav-links.active {
+display: flex;
+}
+
+.menu-toggle {
+display: block;
+}
+
+.hero {
+flex-direction: column;
+text-align: center;
+}
+}
+
